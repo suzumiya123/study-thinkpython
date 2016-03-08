@@ -1,0 +1,16 @@
+how to install git(for centos6.3):
+    #yum install git git-gui
+设置SSH KEY:
+    #ssh-keygen -t rsa -C "daiwu598@hotmail.com"
+    #cat /root/.ssh/id_rsa.pub
+复制SSH KEY,将其复制到github的add ssh keys中
+验证与github的认证和通信:
+    #ssh -T git@github.com
+clone github上仓库目录：
+    #git clone git@github.com:suzumiya123/study-thinkpython.git
+    #git status
+在仓库中编写好代码后,进行提交到仓库：
+    #git add square1.py
+    #git commit -m "add square1 script by python" //真正提交到仓库
+更新github仓库：
+    #git push
