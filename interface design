@@ -1,2 +1,17 @@
-Linux(Centos6.3)下安装tkinter:
+安装swampy:方法见：http://www.greenteapress.com/thinkpython/swampy/install.html
+首先Linux(Centos6.3)下安装tkinter:
 yum install tkinter
+yum install python-imaging
+yum install python-tools
+验证tkinter已经安装完毕，进入交互python模式，输入(无报错即可）：
+>>>import Tkinter(python2）
+>>>
+然后安装swampy，先下载swampy包：https://pypi.python.org/pypi/swampy
+解压缩swampy-x.x.x.tar.gz
+tar -xzf swampy-x.x.x.tar.gz
+cd swampy-x.x.x
+python setup.py install
+验证swampy已经安装完毕，进入交互python模式，输入（无报错即可）：
+>>> from swampy.TurtleWorld import *
+>>> world = TurtleWorld()
+>>> world.mainloop()
