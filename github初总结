@@ -20,3 +20,11 @@ clone github上仓库目录：
 git的分支概念:
     #git checkout -b feature-A (建立分支）
     #git merge --no-ff feature-A(合并分支）
+在有公司代理服务器的情况下，windows下使用git bash设置代理连接github仓库
+    ① #git config --local -e
+      将url = git@github.com:username/repo.git改为url = https://github.com/username/repo.git，使用https方式连接
+    ② #
+        export http_proxy="http://127.0.0.1:8087" 
+        export https_proxy="http://127.0.0.1:8087" 
+    另外参考：https://segmentfault.com/q/1010000000118837
+    
