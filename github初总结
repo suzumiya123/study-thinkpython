@@ -14,3 +14,9 @@ clone github上仓库目录：
     #git commit -m "add square1 script by python" //真正提交到仓库
 更新github仓库：
     #git push
+查看提交日志：
+    #git log
+**执行git commit命令之前先执行git diff HEAD命令，查看本次提交与上次提交之间有什么差别
+git的分支概念:
+    #git checkout -b feature-A (建立分支）
+    #git merge --no-ff feature-A(合并分支）
