@@ -1,6 +1,6 @@
 #!/usr/bin/pyton
 # Filename : helloworld.py
 
-pirnt("it's new ")
-
+print ("it's new ")
+print ("it's the first github feanture")
 
