@@ -26,5 +26,6 @@ git的分支概念:
     ② #
         export http_proxy="http://127.0.0.1:8087" 
         export https_proxy="http://127.0.0.1:8087" 
+    	1
     另外参考：https://segmentfault.com/q/1010000000118837
     
