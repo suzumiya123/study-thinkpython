@@ -7,6 +7,4 @@ print ("add one")
 print ("add two")
 print ("add the one")
 print ("add the two")
-print ("test stash")
-
 
