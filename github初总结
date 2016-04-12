@@ -1,5 +1,7 @@
 how to install git(for centos6.3):
     #yum install git git-gui
+for unbuntu
+    #sudo apt-get install git
 设置SSH KEY:
     #ssh-keygen -t rsa -C "daiwu598@hotmail.com"
     #cat /root/.ssh/id_rsa.pub
