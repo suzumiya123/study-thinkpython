@@ -1,5 +1,7 @@
 how to install git(for centos6.3):
     #yum install git git-gui
+for unbuntu
+    #sudo apt-get install git
 设置SSH KEY:
     #ssh-keygen -t rsa -C "daiwu598@hotmail.com"
     #cat /root/.ssh/id_rsa.pub
@@ -26,6 +28,7 @@ git的分支概念:
     ② #
         export http_proxy="http://127.0.0.1:8087" 
         export https_proxy="http://127.0.0.1:8087" 
+    或者 git config --global http.proxy 192.168.1.1:8080
     	1
     另外参考：https://segmentfault.com/q/1010000000118837
     
