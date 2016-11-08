@@ -19,6 +19,10 @@ clone github上仓库目录：
 查看提交日志：
     #git log
 **执行git commit命令之前先执行git diff HEAD命令，查看本次提交与上次提交之间有什么差别
+工作区修改或者误删除进行还原：
+    #git checkout
+添加到暂存区的修改:
+    #git reset
 git的分支概念:
     #git checkout -b feature-A (建立分支）
     #git merge --no-ff feature-A(合并分支）
