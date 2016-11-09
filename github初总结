@@ -2,6 +2,9 @@ how to install git(for centos6.3):
     #yum install git git-gui
 for unbuntu
     #sudo apt-get install git
+ 安装完后设置golbal环境
+    #git config --global user.email "your@example.com"
+    #git config --global user.name "your name "
 设置SSH KEY:
     #ssh-keygen -t rsa -C "daiwu598@hotmail.com"
     #cat /root/.ssh/id_rsa.pub
