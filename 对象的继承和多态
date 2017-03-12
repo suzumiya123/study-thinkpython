@@ -35,3 +35,47 @@ I am in 上海
 I'm in 上海-浦东
 我不属于Province类或其子类，但我有ps方法我同样可以被调用
 我不属于Province类火气子类，但我有ps1方法我同样可以被调用
+
+#新增一个类型理解
+class Animal(object):
+    def my_run(self):
+        self.run()              # 根据实际对象，调用实际的run方法
+
+    def run(self):
+        print("Animal running")
+
+    def get_object(self, obj):
+        obj.my_run()
+
+class Dog(Animal):
+    def run(self):
+        print("Dog running")
+
+class Bird(object):
+    def my_run(self):
+        print("Bird running")
+
+
+print("---------------------继承测试------------------------------")
+my_Animal = Animal()
+my_Animal.my_run()      # Animal running
+
+my_Animal = Dog()
+my_Animal.my_run()      # Dog running
+
+print("---------------------鸭子类型测试------------------------------")
+my_animal = Animal()
+my_animal.get_object(Animal())
+my_animal.get_object(Dog())
+my_animal.get_object(Bird())    
+# Bird并不继承自任何类，由于python的函数参数没有要求明确类型，所以进入了Animal类的方法中，但Bird类恰好有my_run，就被看成是Animal的子类！！
+
+#返回结果
+结果：
+---------------------继承测试------------------------------
+Animal running
+Dog running
+---------------------鸭子类型测试------------------------------
+Animal running
+Dog running
+Bird running
