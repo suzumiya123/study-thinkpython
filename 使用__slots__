@@ -1,0 +1,20 @@
+# slots只能限制类的实例添加属性，不能限制类通过添加方法和添加属性：即slots确实限制了类的实例可以添加的属性及方法，
+# 无法限制类可以添加的属性及函数，s.name和s.age是通过类的实例引用类的属性及方法，并非类的实例自己的属性
+def set_city(self, city):
+    self.city=city
+
+class Student(object):
+    __slots__ = ('name', 'age', 'set_city')
+    pass
+
+Student.set_city = MethodType(set_city, Student)
+
+a = Student()
+a.set_city(Beijing)
+a.city
+
+#上段代码中，Student类限制两个属性name 和 age，但可以通过添加方法添加一个city属性（甚至可以添加很多属性，只要set_city方法里有包括）
+#第二，属性分实例属性和类属性，多个实例同时更改类属性，值是最后更改的一个
+
+s = Student()
+s.set_city =
